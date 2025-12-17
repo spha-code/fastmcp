@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+
+    "terminal-server": {
+      "command": "wsl.exe",
+      "args": [
+        "bash", 
+        "-c", 
+        "cd /home/user/workspace/github.com/spha-code/mcp/servers/terminal_server && /home/user/.local/bin/uv run python main.py"
+      ]
+    },
+"gecko-live": {
+  "command": "wsl.exe",
+  "args": ["bash", "-c", "cd /home/user/workspace/github.com/spha-code/mcp/servers/terminal_server && /home/user/miniconda3/bin/python coingecko_mcp.py"]
+}
+  }
+}
+
+
