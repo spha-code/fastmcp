@@ -1,0 +1,15 @@
+[project]
+name = "terminal-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastmcp>=2.14.1",
+    "mcp[cli]>=1.23.3",
+]
+
+[dependency-groups]
+dev = [
+    "mcp-inspector>=0.1.0",
+]
