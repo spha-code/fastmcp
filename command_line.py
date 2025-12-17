@@ -1,7 +1,7 @@
 import os
 import subprocess
-import json  # Add JSON parsing
-from mcp.server.fastmcp import FastMCP  # Keep your original import
+import json  #JSON parsing
+from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("My MCP Server")
 
@@ -13,7 +13,7 @@ async def run_command(command: str) -> str:  # Keep async for official SDK
     Run a terminal command inside the workspace directory.
     """
     try:
-        # NEW: Parse JSON to extract the actual command
+        # Parse JSON to extract the actual command
         if command.startswith('{'):
             command_data = json.loads(command)
             actual_command = command_data.get('command', '')
